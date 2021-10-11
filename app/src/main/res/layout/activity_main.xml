@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/black"
+        app:tabIndicatorHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"/>
+
+    <TextView
+        android:id="@+id/math_operation"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="0"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="70sp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
